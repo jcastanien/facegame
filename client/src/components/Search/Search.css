@@ -1,0 +1,50 @@
+.card .card-title {
+    font-size: 300%;
+}
+
+.wrapper-two {
+    padding: 25px 0 0 0;
+}
+
+@media only screen and (min-width: 601px){
+    .row .col.m6 {
+        width: 100%;
+    }
+}
+
+.grey-text.text-darken-4 {
+    color: white !important;
+}
+
+.picker__input {
+    cursor: pointer;
+}
+
+.input-field {
+    background-color: white;
+}
+
+.col .input-field {
+    width: 100%;
+}
+
+input#endYear.picker__input {
+    color: black;
+    margin-left: 50px;
+    border-bottom: none;
+}
+
+input#startYear.picker__input {
+    color: black;
+    margin-left: 50px;
+    border-bottom: none;
+}
+
+.label-icon {
+    margin-top: -10px;
+}
+
+input[type=search] {
+    background-color: white !important;
+    color: black;
+}

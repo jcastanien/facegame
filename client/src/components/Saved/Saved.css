@@ -1,0 +1,13 @@
+.delete-btn {
+    margin-top: 5px;
+    background-color: #ee6e73;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.col .m4,
+.col .m8 {
+    padding: 0;
+    height: 42px;
+}

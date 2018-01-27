@@ -1,0 +1,26 @@
+.collection {
+    margin: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.toast {
+    margin-top: -75px;
+    position: 0;
+}
+
+.read-btn {
+    margin-right: 10px;
+    margin-top: -7px;
+    background-color: #ee6e73;
+}
+
+.read-btn:hover {
+    background-color: #f28d90;
+}
+
+.custom-text {
+    color: #26a69a;
+}
