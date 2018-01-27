@@ -1,0 +1,3 @@
+input[type=search]:not(.browser-default) {
+    background-color: #e0e0e0;
+}
