@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import "./Footer.css"
 import Col from "../Col"
 
-export default class Footer extends Component {
+export default class Footer extends React.Component {
     render() {
         return (
             <footer className="page-footer blue-grey darken-3">
@@ -15,10 +15,10 @@ export default class Footer extends Component {
                         <Col l={4} offset="l2" s={12}>
                             <h5 className="white-text">Links</h5>
                             <ul>
-                                <li><a className="grey-text text-lighten-3" href="https://reactjs.org/" target="_blank">React</a></li>
-                                <li><a className="grey-text text-lighten-3" href="http://materializecss.com/about.html" target="_blank">Materialize</a></li>
-                                <li><a className="grey-text text-lighten-3" href="http://www.material-ui.com/#/" target="_blank">Materialize-UI</a></li>
-                                <li><a className="grey-text text-lighten-3" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                                <li><a className="grey-text text-lighten-3" rel="noopener noreferrer" href="https://reactjs.org/" target="_blank">React</a></li>
+                                <li><a className="grey-text text-lighten-3" rel="noopener noreferrer" href="http://materializecss.com/about.html" target="_blank">Materialize</a></li>
+                                <li><a className="grey-text text-lighten-3" rel="noopener noreferrer" href="http://www.material-ui.com/#/" target="_blank">Materialize-UI</a></li>
+                                <li><a className="grey-text text-lighten-3" rel="noopener noreferrer" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
                             </ul>
                         </Col>
                     </div>

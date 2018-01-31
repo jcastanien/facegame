@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Proptypes from 'prop-types'
 import Works from "../Works"
 import LoggedIn from "../LoggedIn"
 
-export default class LoginController extends Component {
+export default class LoginController extends React.Component {
     render() {
         const { firstName, isLoggedIn, handleLoginClick, handleLogoutClick } = this.props
         let page = null
