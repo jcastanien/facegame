@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import "./Footer.css"
 import Col from "../Col"
 
 export default class Footer extends Component {
     render() {
         return (
-            <footer className="page-footer">
+            <footer className="page-footer blue-grey darken-3">
                 <div className="container">
                     <div className="row">
                         <Col l={6} s={12}>
