@@ -1,20 +1,25 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Home from "./pages/Home"
-import Nav from "./components/Nav"
-import Foot from "./components/Foot"
+import Footer from "./components/Footer"
 
-const App = () =>
+const App = () => (
 
   <Router>
     <div>
-      <Nav />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={Home} />
-      </Switch>
-      <Foot />
+      <MuiThemeProvider>
+        <div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/home" component={Home} />
+          </Switch>
+          <Footer />
+        </div>
+      </MuiThemeProvider>
     </div>
   </Router>
+
+)
 
 export default App
