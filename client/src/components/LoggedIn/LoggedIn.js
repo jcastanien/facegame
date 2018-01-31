@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Welcome from '../Welcome'
 
-export default class LoggedIn extends Component {
+export default class LoggedIn extends React.Component {
     render() {
         const { firstName } = this.props
 
