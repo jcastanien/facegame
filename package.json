@@ -23,6 +23,8 @@
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "material": "^0.2.6",
+    "material-ui": "^0.20.0",
     "mongoose": "^4.11.7",
     "react-router-dom": "^4.2.2"
   }
