@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Navbar from "../../components/Navbar"
+import Footer from "../../components/Footer"
 import LoginController from "../../components/LoginController"
 
 export default class Home extends Component {
@@ -23,12 +24,6 @@ export default class Home extends Component {
 
   }
 
-  handleLoginClick = () => {
-    this.setState({
-      isLoggedIn: true
-    })
-  }
-
   handleLogoutClick = () => {
     this.setState({
       isLoggedIn: false
@@ -38,25 +33,30 @@ export default class Home extends Component {
   facebook = () => {
     // api call to facebook
     alert('please sign in')
-    this.handleLoginClick()
+    this.setState({
+      isLoggedIn: true
+    })
   }
 
   render() {
     return (
       <div>
-        <Navbar
-          isLoggedIn={this.state.isLoggedIn}
-          firstName={this.state.firstName}
-          handleChange={this.handleChange}
-          handleLogoutClick={this.handleLogoutClick}
-          facebook={this.facebook}
-        />
-        <LoginController
-          isLoggedIn={this.state.isLoggedIn}
-          handleLoginClick={this.handleLoginClick}
-          handleLogoutClick={this.handleLogoutClick}
-          firstName={this.state.firstName}
-        />
+        <div className="content">
+          <Navbar
+            isLoggedIn={this.state.isLoggedIn}
+            firstName={this.state.firstName}
+            handleChange={this.handleChange}
+            handleLogoutClick={this.handleLogoutClick}
+            facebook={this.facebook}
+          />
+          <LoginController
+            isLoggedIn={this.state.isLoggedIn}
+            handleLoginClick={this.handleLoginClick}
+            handleLogoutClick={this.handleLogoutClick}
+            firstName={this.state.firstName}
+          />
+        </div>
+        <Footer />
       </div>
     )
   }

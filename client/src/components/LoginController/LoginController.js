@@ -9,10 +9,10 @@ export default class LoginController extends Component {
         let page = null
 
         if (isLoggedIn) {
-            page = <LoggedIn 
-                        onClick={handleLogoutClick} 
-                        firstName={firstName}
-                    />
+            page = <LoggedIn
+                onClick={handleLogoutClick}
+                firstName={firstName}
+            />
         } else {
             page = <Works onClick={handleLoginClick} />
         }
