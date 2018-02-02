@@ -21,18 +21,12 @@ export default class Home extends Component {
 
   // When react loads, load all articles
   componentDidMount() {
-
-  }
-
-  handleLogoutClick = () => {
-    this.setState({
-      isLoggedIn: false
-    })
+    
   }
 
   facebook = () => {
     // api call to facebook
-    alert('please sign in')
+
     this.setState({
       isLoggedIn: true
     })
