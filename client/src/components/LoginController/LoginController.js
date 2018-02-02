@@ -6,6 +6,7 @@ import LoggedIn from "../LoggedIn"
 export default class LoginController extends React.Component {
     render() {
         const { firstName, isLoggedIn, handleLoginClick, handleLogoutClick } = this.props
+        
         let page = null
 
         if (isLoggedIn) {

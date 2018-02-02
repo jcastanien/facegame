@@ -7,6 +7,8 @@ import Button from 'material-ui/Button'
 import Paper from 'material-ui/Paper'
 import Typography from 'material-ui/Typography'
 import Col from "../Col"
+import FbButton from "../FbButton"
+import FacebookLogin from 'react-facebook-login'
 
 const styles = theme => ({
     root: {
@@ -67,6 +69,10 @@ class Works extends React.Component {
         })
     }
 
+    responseFacebook(response) {
+        console.log(response);
+    }
+
     render() {
         const { classes } = this.props
         const steps = getSteps()
@@ -112,7 +118,18 @@ class Works extends React.Component {
                             <Button onClick={this.handleReset} className={classes.button}>
                                 Reset
                             </Button>
+                            <FacebookLogin
+                                appId="148785105783859"
+                                autoLoad={true}
+                                fields="name,email,picture"
+                                scope="public_profile,email,user_birthday,user_photos"
+                                callback={this.responseFacebook}
+                                onClick="testTwoAPI()"
+                            />       
+                            <button type="button" onClick={window.logout} >Log out
+                            </button>
                         </Paper>
+
                     )}
                 </Col>
             </div>
@@ -127,3 +144,4 @@ Works.propTypes = {
 }
 
 export default withStyles(styles)(Works)
+
